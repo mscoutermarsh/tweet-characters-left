@@ -1,5 +1,6 @@
 # tweet-characters-left :bird:
 [![Build Status](https://travis-ci.org/mscoutermarsh/tweet-characters-left.svg?branch=master)](https://travis-ci.org/mscoutermarsh/tweet-characters-left)
+[![Code Climate](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left/badges/gpa.svg)](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left)
 
 A Node module for determining the number of characters left in a tweet. It uses Twitter's official TwitterText library to count characters. Includes option to leave space for image attachments.
 
