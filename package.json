@@ -1,0 +1,30 @@
+{
+  "name": "tweet-characters-left",
+  "version": "1.0.0",
+  "description": "Node.js package for determining the number of characters left in a tweet. Supports including an image attachment. Uses Twitter's official TwitterText package for counting characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mscoutermarsh/tweet-characters-left.git"
+  },
+  "keywords": [
+    "tweet",
+    "twitter"
+  ],
+  "author": "Mike Coutermarsh <coutermarsh.mike@gmail.com> (https://www.mikecoutermarsh.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mscoutermarsh/tweet-characters-left/issues"
+  },
+  "homepage": "https://github.com/mscoutermarsh/tweet-characters-left#readme",
+  "dependencies": {
+    "twitter-text": "^1.13.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
