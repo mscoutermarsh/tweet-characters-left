@@ -1,10 +1,16 @@
-var twitterText = require('twitter-text');
+const twitterText = require('twitter-text');
 
-module.exports = function(text, imageAttachments) {
-  var charsLeft = 140;
+const TWEET_LENGTH = 140;
+const IMAGE_ATTACHMENTS_LENGTH = 24;
 
-  // Images (1 or more), use up 24 characters.
-  if (imageAttachments === true) { charsLeft -= 24; };
+function tweetCharactersLeft(text, imageAttachments) {
+  var charsLeft = TWEET_LENGTH;
+
+  if (imageAttachments === true) {
+    charsLeft -= IMAGE_ATTACHMENTS_LENGTH;
+  }
 
   return charsLeft - twitterText.getTweetLength(text);
 };
+
+module.exports = tweetCharactersLeft;
