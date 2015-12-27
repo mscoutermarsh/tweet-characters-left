@@ -11,6 +11,6 @@ function tweetCharactersLeft(text, imageAttachments) {
   }
 
   return charsLeft - twitterText.getTweetLength(text);
-};
+}
 
 module.exports = tweetCharactersLeft;
