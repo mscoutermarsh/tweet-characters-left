@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/mscoutermarsh/tweet-characters-left.svg?branch=master)](https://travis-ci.org/mscoutermarsh/tweet-characters-left)
 [![Code Climate](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left/badges/gpa.svg)](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left)
 
-A Node module for determining the number of characters left in a tweet. It uses Twitter's official TwitterText library to count characters. Includes option to leave space for image attachments.
+A Node module for determining the number of characters left in a tweet. It uses Twitter's official TwitterText library to count characters. Includes option to leave space for images.
 
 ## Installation
 ```Bash
@@ -18,9 +18,11 @@ tweetCharactersLeft("Bieber! Marry me!");
 // => 123
 
 // We can also leave space for an image
-tweetCharactersLeft("Bieber! Marry me!", true);
+tweetCharactersLeft("Bieber! Marry me!", { hasImage: true });
 // => 99
 ```
+
+Note: Twitter uses 24 characters for 1 or more images. This works for any number of image attachments.
 
 ## Tests
 ```Bash

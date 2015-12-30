@@ -4,4 +4,4 @@ var tweetCharactersLeft = require("tweet-characters-left");
 console.log(tweetCharactersLeft("Bieber! Marry me!"));
 
 // If we also included an image.
-console.log(tweetCharactersLeft("Bieber! Marry me!", true));
+console.log(tweetCharactersLeft("Bieber! Marry me!", { hasImage: true }));

@@ -15,11 +15,11 @@ describe('tweetCharactersLeft', function() {
   });
 
   it('can leave space for image attachments', () => {
-    expect(tweetCharactersLeft('', true)).to.eq(116);
+    expect(tweetCharactersLeft('', { hasImage: true })).to.eq(116);
   });
 
   it('handles negative numbers', () => {
     var longTweet = Array(100).join('abc');
-    expect(tweetCharactersLeft(longTweet, true)).to.eq(-181);
+    expect(tweetCharactersLeft(longTweet, { hasImage: true })).to.eq(-181);
   });
 });

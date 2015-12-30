@@ -1,13 +1,14 @@
 const twitterText = require('twitter-text');
 
 const TWEET_LENGTH = 140;
-const IMAGE_ATTACHMENTS_LENGTH = 24;
+const IMAGE_ATTACHMENT_LENGTH = 24;
 
-function tweetCharactersLeft(text, imageAttachments) {
+function tweetCharactersLeft(text, options) {
+  var options = options || {};
   var charsLeft = TWEET_LENGTH;
 
-  if (imageAttachments === true) {
-    charsLeft -= IMAGE_ATTACHMENTS_LENGTH;
+  if (options.hasImage === true) {
+    charsLeft -= IMAGE_ATTACHMENT_LENGTH;
   }
 
   return charsLeft - twitterText.getTweetLength(text);
