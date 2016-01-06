@@ -1,4 +1,5 @@
 # tweet-characters-left :bird:
+[![npm version](https://badge.fury.io/js/tweet-characters-left.svg)](https://badge.fury.io/js/tweet-characters-left)
 [![Build Status](https://travis-ci.org/mscoutermarsh/tweet-characters-left.svg?branch=master)](https://travis-ci.org/mscoutermarsh/tweet-characters-left)
 [![Code Climate](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left/badges/gpa.svg)](https://codeclimate.com/github/mscoutermarsh/tweet-characters-left)
 
