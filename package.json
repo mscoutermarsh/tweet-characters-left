@@ -1,6 +1,6 @@
 {
   "name": "tweet-characters-left",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js package for determining the number of characters left in a tweet. Supports character counts for tweets with images. Uses Twitter's official TwitterText package for counting characters.",
   "main": "index.js",
   "tonicExampleFilename": "example.js",
