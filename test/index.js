@@ -14,12 +14,8 @@ describe('tweetCharactersLeft', function() {
     expect(tweetCharactersLeft('https://www.producthunt.com')).to.eq(117);
   });
 
-  it('can leave space for image attachments', () => {
-    expect(tweetCharactersLeft('', { hasImage: true })).to.eq(116);
-  });
-
   it('handles negative numbers', () => {
     var longTweet = Array(100).join('abc');
-    expect(tweetCharactersLeft(longTweet, { hasImage: true })).to.eq(-181);
+    expect(tweetCharactersLeft(longTweet)).to.eq(-157);
   });
 });
