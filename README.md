@@ -16,7 +16,7 @@ var tweetCharactersLeft = require("tweet-characters-left");
 
 // Twitters most common tweet
 tweetCharactersLeft("Bieber! Marry me!");
-// => 123
+// => 263
 ```
 
 ## Tests
