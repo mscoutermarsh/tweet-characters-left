@@ -25,7 +25,7 @@
     "twitter-text": "^2.0.4"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "chai": "3.5.0",
+    "mocha": "2.5.3"
   }
 }
