@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mscoutermarsh/tweet-characters-left#readme",
   "dependencies": {
-    "twitter-text": "^2.0.4"
+    "twitter-text": "^3.0.0"
   },
   "devDependencies": {
     "chai": "4.1.2",
